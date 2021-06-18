@@ -340,28 +340,36 @@ public class Vprincipal extends javax.swing.JFrame {
     //Case para determinar cantidad de dinero por moneda
         switch ((String)ComboBox_Moneda.getSelectedItem()) {
             case "50" :
-                    JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedad de 50 es \n:" +(contMoneda50* 50) + "COP" ); 
+                    JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedas de 50 es \n:" +(contMoneda50* 50) + "COP" ); 
                     break;
                     
             case "100" : 
                 
-               JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedad de 100 es \n:" +(contMoneda100* 100) + "COP" ); 
+               JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedas de 100 es \n:" +(contMoneda100* 100) + "COP" ); 
                 break; 
                 
             case "200" : 
-                JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedad de 200 es \n:" +(contMoneda200* 200) + "COP" );
+                JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedas de 200 es \n:" +(contMoneda200* 200) + "COP" );
                 break; 
                 
             case "500" : 
-                JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedad de 500 es \n:" +(contMoneda500* 500) + "COP" );
+                JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedas de 500 es \n:" +(contMoneda500* 500) + "COP" );
                 break; 
                 
             case "1000" : 
-                JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedad de 1000 es \n:" +(contMoneda1000* 1000) + "COP" );
+                JOptionPane.showMessageDialog(this,"La cantidad de dinero en monedas de 1000 es \n:" +(contMoneda1000* 1000) + "COP" );
                 break; 
                 
             case "Todas" : 
-                JOptionPane.showMessageDialog(this,"La cantidad de dinero en la alcancia es : \n"+ ((contMoneda500*500)+(contMoneda1000*1000)+(contMoneda200*200)+(contMoneda100*100)+(contMoneda50*50) ) +"COP" ); 
+                JOptionPane.showMessageDialog(this,"La cantidad  total de dinero en la alcancia es : \n"+ ((contMoneda500*500)+(contMoneda1000*1000)+(contMoneda200*200)+(contMoneda100*100)+(contMoneda50*50) ) +"COP" + "\n" +
+                        "Detalles : \n" +  
+                        "La cantidad de dinero en monedas de 50 es \n:" +(contMoneda50* 50) + "COP" +"\n" + 
+                        "La cantidad de dinero en monedas de 100 es \n:" +(contMoneda100* 100) + "COP" +"\n" + 
+                        "La cantidad de dinero en monedas de 200 es \n:" +(contMoneda200* 200) + "COP" +"\n" + 
+                        "La cantidad de dinero en monedas de 500 es \n:" +(contMoneda500* 500) + "COP" +"\n" + 
+                        "La cantidad de dinero en monedas de 1000 es \n:" +(contMoneda1000* 1000) + "COP" +"\n"  
+                        
+                        ); 
                 break; 
                 
             default : 
@@ -400,7 +408,13 @@ public class Vprincipal extends javax.swing.JFrame {
                 break; 
                 
             case "Todas" : 
-                JOptionPane.showMessageDialog(this,"La cantidad de monedas en la alcancia es : \n"+ (contMoneda500+contMoneda1000+contMoneda200+contMoneda100+contMoneda50 ) ); 
+                JOptionPane.showMessageDialog(this,"La cantidad total de monedas en la alcancia es : "+ (contMoneda500+contMoneda1000+contMoneda200+contMoneda100+contMoneda50 ) + "\n" + 
+                        "Detalles : \n"+
+                "La cantidad de monedas de 50 es :" + contMoneda50 + "\n" + 
+                "La cantidad de monedas de 100 es :" + contMoneda100 + "\n" + 
+                "La cantidad de monedas de 200 es : \n"+ contMoneda200 +"\n"+ 
+                 "La cantidad de monedas de 500 es : \n"+ contMoneda500 +"\n"+   
+                "La cantidad de monedas de 1000 es : \n"+ contMoneda1000       ); 
                 break; 
               //La siguiente opcion determina si no se ha seleccionado ninguna moneda  
             default : 
